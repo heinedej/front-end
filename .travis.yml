@@ -15,6 +15,7 @@ before_install:
 install:
   - npm install
 
+
 env:
   - GROUP=quay.io/heinedej COMMIT=”${TRAVIS_COMMIT}” TAG=”${TRAVIS_TAG}” REPO=front-end;
 
