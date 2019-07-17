@@ -16,7 +16,6 @@ install:
   - npm install
 
 env:
-  - GROUP=weaveworksdemos COMMIT="${TRAVIS_COMMIT}" TAG="${TRAVIS_TAG}" REPO=front-end;
   - GROUP=quay.io/heinedej COMMIT=”${TRAVIS_COMMIT}” TAG=”${TRAVIS_TAG}” REPO=front-end;
 
 script:
