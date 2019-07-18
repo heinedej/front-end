@@ -16,7 +16,8 @@ install:
   - npm install
 
 env:
-  - GROUP=quay.io/heinedej COMMIT=”${TRAVIS_COMMIT}” TAG=”${TRAVIS_TAG}”
+  - GROUP=hub.docker.com/heinedej COMMIT=”${TRAVIS_COMMIT}” TAG=”${TRAVIS_TAG}”
+  #- GROUP=quay.io/heinedej COMMIT=”${TRAVIS_COMMIT}” TAG=”${TRAVIS_TAG}”
 
 script:
   - make test
