@@ -23,7 +23,7 @@ fi
 CODE_DIR=$(cd $SCRIPT_DIR/..; pwd)
 echo $CODE_DIR
 
-#REPO=${GROUP}/$(basename front-end);
-REPO=heinedej/$(basename front-end);
+# REPO=${GROUP}/$(basename front-end);
+# REPO=heinedej/$(basename front-end);
 
 $DOCKER_CMD build -t heinedej/front-end:${COMMIT} .
