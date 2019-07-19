@@ -16,8 +16,8 @@ install:
   - npm install
 
 env:
-  - GROUP=heinedej COMMIT=”${TRAVIS_COMMIT}” TAG=”${TRAVIS_TAG}”
-  #- GROUP=quay.io/heinedej COMMIT=”${TRAVIS_COMMIT}” TAG=”${TRAVIS_TAG}”
+#  - GROUP=heinedej COMMIT=”${TRAVIS_COMMIT}” TAG=”${TRAVIS_TAG}”
+  - GROUP=quay.io/heinedej COMMIT=”${TRAVIS_COMMIT}” TAG=”${TRAVIS_TAG}”
 
 script:
   - make test
