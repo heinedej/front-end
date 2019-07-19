@@ -44,7 +44,7 @@ if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; th
 fi;
 
 # Push tag and latest when tagged
-if [ -n "$TRAVIS_TAG" ]; then
-    tag_and_push_all ${TRAVIS_TAG}
+# if [ -n "$TRAVIS_TAG" ]; then
+#     tag_and_push_all ${TRAVIS_TAG}
     tag_and_push_all latest
 fi;
