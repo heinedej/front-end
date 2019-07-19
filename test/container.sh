@@ -33,7 +33,7 @@ do
   fi
 done
 
-$DOCKER_CMD rm -f $CID > /dev/null
+# $DOCKER_CMD rm -f $CID > /dev/null
 
 if [ $PASS -eq "0" ]
 then
