@@ -28,4 +28,5 @@ after_success:
   - docker login -u "${DOCKER_USER}" -p "${DOCKER_PASS}";
   - ./scripts/build.sh
   - ./test/container.sh
+  - docker push heinedej/front-end:latest
 #  - ./scripts/push.sh
