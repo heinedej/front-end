@@ -26,4 +26,5 @@ echo $CODE_DIR
 # REPO=${GROUP}/$(basename front-end);
 # REPO=heinedej/$(basename front-end);
 
-$DOCKER_CMD build -t heinedej/front-end:${COMMIT} .
+# $DOCKER_CMD build -t heinedej/front-end:${COMMIT} .
+$DOCKER_CMD build -t heinedej/front-end .
