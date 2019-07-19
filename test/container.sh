@@ -19,7 +19,8 @@ fi
 PASS=1
 REPO=${GROUP}/$(basename front-end);
 
-CID=$($DOCKER_CMD run -d --name testcontainer -p 8080:8079 ${REPO}:${COMMIT})
+CID=$($DOCKER_CMD run -d --name testcontainer -p 8080:8079 heinedej/front-end:latest
+#CID=$($DOCKER_CMD run -d --name testcontainer -p 8080:8079 ${REPO}:${COMMIT})
 
 for i in 1 2 3 4 5
 do
@@ -33,7 +34,7 @@ do
   fi
 done
 
-# $DOCKER_CMD rm -f $CID > /dev/null
+$DOCKER_CMD rm -f $CID > /dev/null
 
 if [ $PASS -eq "0" ]
 then
